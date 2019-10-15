@@ -1,6 +1,6 @@
-/*** webpack.config.js ***/
-const path = require('path');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+import path from 'path';
+import HtmlWebpackPlugin from "html-webpack-plugin";
+
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
   template: path.join(__dirname, "examples/src/index.html"),
   filename: "./index.html"
