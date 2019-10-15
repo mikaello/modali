@@ -249,7 +249,7 @@ when the modal shows and hides.
 | `onShow`          | Called when the component finishes mounting to the DOM                                  |
 | `onHide`          | Called when the component is removed from the DOM                                       |
 | `onEscapeKeyDown` | Called when the escape key is pressed while the component is mounted to the DOM         |
-| `onOverlayClick`  | Called when the modal overlay back is clicked while the component is mounted to the DOM |
+| `onOverlayClicked`| Called when the modal overlay back is clicked while the component is mounted to the DOM |
 
 Example
 
