@@ -120,7 +120,7 @@ const Modal = ({ isModalVisible, hide, options, children }: IModalProps) => {
             role="dialog"
             onClick={handleOverlayClicked}
           >
-            <div className={modaliClass}>
+            <div className={modaliClass} style={{ top: options.offsetTop }}>
               <div className="modali-content">
                 {options.closeButton === false ? null : (
                   <div className="modali-header">
