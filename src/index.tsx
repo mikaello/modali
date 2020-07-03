@@ -130,22 +130,22 @@ const Modal: ModalType = ({
           >
             <div className={modaliClass} style={{ top: options.offsetTop }}>
               <div className="modali-content">
-                {options.closeButton === false ? null : (
                   <div className="modali-header">
                     {options.title !== undefined && (
                       <div className="modali-title">{options.title}</div>
                     )}
-                    <button
-                      type="button"
-                      className="modali-close-button"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                      onClick={hide}
-                    >
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                )}
+                    {options.closeButton === false ? null : (
+                      <button
+                        type="button"
+                        className="modali-close-button"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        onClick={hide}
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    )}
+                  </div>                
                 <div className="modali-body">{renderBody()}</div>
                 {options.buttons &&
                   options.buttons.length > 0 &&
